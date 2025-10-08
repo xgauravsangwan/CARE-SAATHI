@@ -1,16 +1,15 @@
-# HospitalManagementSysyem
-Hospital management system project in java using JSP, servlet, Mysql, and eclipse. Its using java as core technology and Mysql as backend to manage the data records. The application is following the MVC architecture with maven tool. HMS is a web application which is a help to manage the activity of an hospital Like Patient management, Doctor management, Manage appointments. Manage the records of patients.
+# CARE-SAATHI
+CARE-SAATHI project in java using JSP, servlet, Mysql, and eclipse. Its using java as core technology and Mysql as backend to manage the data records. The application is following the MVC architecture with maven tool. HMS is a web application which is a help to manage the activity of an hospital Like Patient management, Doctor management, Manage appointments. Manage the records of patients.
 
-Know more about in details  [MyBlog](https://www.inaminutes.com/how-can-i-import-a-git-repository-into-eclipse-ide/)
+The main objective to develop CARE-SAATHI in java is to manage the hospital activity online.
 
-The main objective to develop Hospital management system in java is to manage the hospital activity online.
-
-There will be Three main Actors or Users of the application 
-1. doctor 
+There will be four main Actors or Users of the application 
+1. Doctor 
 2. Admin 
-3. Receptionist.
+3. Receptionist
+4. Patient
 
-There are three main actors of the system who going to manage or run the complete application. Let’s discuss one by one according to the role and readabilities.
+There are four main actors of the system who going to manage or run the complete application. Let’s discuss one by one according to the role and readabilities.
 
 # Modules
 
@@ -31,25 +30,22 @@ There are three main actors of the system who going to manage or run the complet
    
    
 ## Receptionist:
+  * Receptionist can ADD/EDIT/VIEW all appointments.
+  * Receptionist can ADD/EDIT/VIEW all patient.
+  * Process payment.
+
+## Patient:
   * Receptionist can ADD/EDIT/VIEW appointments.
-  * Receptionist can ADD/EDIT/VIEW patient .
-   
+  * Receptionist can EDIT/VIEW patient.
    
  # Technology
    
-Technology used in the Hospital Management System project in java
+Technology used in the CARE-SAATHI project in java
 
-* Front -End Jsp, Html, CSS, JS.
-* Server-side: Servlet.
-* Back-end: MYSQL.
-* Server: Tomcat 8.5.
-
-## Want to Contribute?
-- Created something awesome, made this code better, added some functionality, or whatever (this is the hardest part).
-- [Fork it](http://help.github.com/forking/).
-- Create new branch to contribute your changes.
-- Commit all your changes to your branch.
-- Submit a [pull request](http://help.github.com/pull-requests/).
+* Front-End: Jsp, Html, CSS, JS.
+* Server-side: Java Servlet.
+* Back-end: MYSQL, XAMPP.
+* Server: Tomcat 9.
 
 Screenshot:
 
