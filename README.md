@@ -5,9 +5,9 @@ The main objective to develop CARE-SAATHI in java is to manage the hospital acti
 
 There will be four main Actors or Users of the application 
 1. Doctor 
-2. Admin 
+2. Patient 
 3. Receptionist
-4. Patient
+4. Admin
 
 There are four main actors of the system who going to manage or run the complete application. Let’s discuss one by one according to the role and readabilities.
 
@@ -37,6 +37,7 @@ There are four main actors of the system who going to manage or run the complete
 ## Patient:
   * Receptionist can ADD/EDIT/VIEW appointments.
   * Receptionist can EDIT/VIEW patient.
+  * Initiate medication refilling process.
    
  # Technology
    
