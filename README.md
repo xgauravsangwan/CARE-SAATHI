@@ -51,9 +51,11 @@ Screenshot:
 
 ![All Login](build/Screenshots/All_Login.png)
 
+![Patient Home](build/Screenshots/patient_home.png)
+
 ![Patient Registration](build/Screenshots/patient_reg.png)
 
-![Admin Home - Google Chrome 20-08-2020 02_00_38 PM](https://user-images.githubusercontent.com/56467741/90974867-3d07c680-e4fd-11ea-858d-a859e9d55cc3.png)
+![Patient List](build/Screenshots/patient_list.png)
 
 ![Admin Home - Google Chrome 20-08-2020 02_00_59 PM](https://user-images.githubusercontent.com/56467741/90974868-3da05d00-e4fd-11ea-9b33-a8c034763d1e.png)
 
