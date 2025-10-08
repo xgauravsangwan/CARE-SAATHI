@@ -1,0 +1,139 @@
+<%-- 
+    Document   : updatecurrentdoctor
+    Created on : Nov 6, 2024, 10:54:45 PM
+    Author     : Gaurav
+--%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="Database.DatabaseConnection"%>
+<%@page import="java.sql.Connection"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Update Current Doctor</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/adddataform.css">
+    <link rel="stylesheet" type="text/css" href="css/adddatafrm1.css">
+    <style>
+        body {
+            background-image: url("img/CSx.jpg");
+            background-color: #cccccc;
+            .column1 { width: 9%; }
+            .column2 { width: 13%; }
+            .column3 { width: 12%; }
+            .column4 { width: 12%; }
+            .column5 { width: 12%; }
+            .column6 { width: 12%; }
+            .column7 { width: 12%; }
+            .column8 { width: 12%; }
+            .column9 { width: 12%; }
+            .column10 { width: 12%; }
+        }
+    </style>
+</head>
+<body>
+<%
+            
+            String did = request.getParameter("id");
+            Connection con = DatabaseConnection.initializeDatabase();
+            String query = "SELECT * FROM doctor WHERE id = ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setString(1, did);
+            ResultSet  rs = pstmt.executeQuery();
+            while (rs.next()) {
+%> 
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <div class="contact100-form-title" style="background-image: url(img/bg-01.jpg);">
+            <span class="contact100-form-title-1">
+                Doctor Update Form
+            </span>
+        </div>
+        <form class="contact100-form validate-form" action="<%=request.getContextPath()%>/updatecurrentdoctor" method="post">
+            <input type="hidden" name="id" value="<%= did %>">
+            
+            <div class="wrap-input100 validate-input" data-validate="First Name is required">
+                <span class="label-input100">First Name:</span>
+                <input class="input100" type="text" value="<%= rs.getString("fname") %>" name="fname" placeholder="Enter First Name">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Last Name is required">
+                <span class="label-input100">Last Name:</span>
+                <input class="input100" type="text" value="<%= rs.getString("lname") %>" name="lname" placeholder="Enter Last Name">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Gender is required">
+                <span class="label-input100">Your Gender:</span>
+                <input class="input100" type="text" value="<%= rs.getString("gender") %>" name="gender" placeholder="Enter Your Gender">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Phone is required">
+                <span class="label-input100">Mobile Number:</span>
+                <input class="input100" type="text" value="<%= rs.getString("mobile") %>" name="mobile" placeholder="Enter Mobile Number">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="City is required">
+                <span class="label-input100">City:</span>
+                <input class="input100" type="text" value="<%= rs.getString("City") %>" name="City" placeholder="Enter City">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Email:</span>
+                <input class="input100" type="text" value="<%= rs.getString("email") %>" name="email" placeholder="Enter Email">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Age is required">
+                <span class="label-input100">Age:</span>
+                <input class="input100" type="text" value="<%= rs.getString("age") %>" name="age" placeholder="Enter Age">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Address is required">
+                <span class="label-input100">Address:</span>
+                <input class="input100" type="text" value="<%= rs.getString("address") %>" name="address" placeholder="Enter Address">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Date is required">
+                <span class="label-input100">Job Date:</span>
+                <input class="input100" type="text" value="<%= rs.getString("date") %>" name="date" placeholder="Enter Date Of Entering Hospital">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Qualification is required">
+                <span class="label-input100">Qualification:</span>
+                <input class="input100" type="text" value="<%= rs.getString("qualification") %>" name="qualification" placeholder="Enter Qualification">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Specialization is required">
+                <span class="label-input100">Specialization:</span>
+                <input class="input100" type="text" value="<%= rs.getString("specialization") %>" name="specialization" placeholder="Enter Specialization">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    <span>
+                        Submit
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<%
+    }
+%>
+</body>
+</html>
+
