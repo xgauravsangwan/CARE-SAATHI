@@ -57,11 +57,11 @@ Screenshot:
 
 ![Patient List](build/Screenshots/patient_list.png)
 
-![Admin Home - Google Chrome 20-08-2020 02_00_59 PM](https://user-images.githubusercontent.com/56467741/90974868-3da05d00-e4fd-11ea-9b33-a8c034763d1e.png)
+![Appointment Scheduling](build/Screenshots/appointment_scheduling.png)
 
-![Admin Home - Google Chrome 20-08-2020 02_01_58 PM](https://user-images.githubusercontent.com/56467741/90974876-442ed480-e4fd-11ea-88ea-43b334aad466.png)
+![Appointment Management](build/Screenshots/appointment_management.png)
 
-![Admin Home - Google Chrome 20-08-2020 02_02_23 PM](https://user-images.githubusercontent.com/56467741/90974884-527cf080-e4fd-11ea-8ea5-167850c384b5.png)
+![Billing](build/Screenshots/billing.png)
 
 ![Patient List - Google Chrome 20-08-2020 02_03_16 PM](https://user-images.githubusercontent.com/56467741/90974887-56107780-e4fd-11ea-92bf-e8277556152f.png)
 
