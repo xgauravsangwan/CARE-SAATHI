@@ -42,12 +42,12 @@ There are four main actors of the system who going to manage or run the complete
    
 Technology used in the CARE-SAATHI project in java
 
-* Front-End: Jsp, Html, CSS, JS.
+* Front-End: JSP, Html, CSS, JavaScript.
 * Server-side: Java Servlet.
 * Back-end: Java, PHP, MYSQL, XAMPP.
 * Server: Tomcat 9.
 
-Screenshot:
+Screenshots:
 
 ![All Login](build/Screenshots/All_Login.png)
 
@@ -62,8 +62,6 @@ Screenshot:
 ![Appointment Management](build/Screenshots/appointment_management.png)
 
 ![Billing](build/Screenshots/billing.png)
-
-![Patient List - Google Chrome 20-08-2020 02_03_16 PM](https://user-images.githubusercontent.com/56467741/90974887-56107780-e4fd-11ea-92bf-e8277556152f.png)
 
 
 Admin Login:
