@@ -66,7 +66,7 @@ Screenshot:
 
 Admin Login:
 
-![Admin Home - Google Chrome 20-08-2020 01_59_17 PM](https://user-images.githubusercontent.com/56467741/90974898-63c5fd00-e4fd-11ea-897c-57c62515fc4c.png)
+![Admin Home - Google Chrome 20-08-2020 01_59_17 PM](build/Screenshots/Admin_Home.png)
 
 
 Admin Dashboard:
