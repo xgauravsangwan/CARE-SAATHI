@@ -44,12 +44,12 @@ Technology used in the CARE-SAATHI project in java
 
 * Front-End: Jsp, Html, CSS, JS.
 * Server-side: Java Servlet.
-* Back-end: MYSQL, XAMPP.
+* Back-end: Java, PHP, MYSQL, XAMPP.
 * Server: Tomcat 9.
 
 Screenshot:
 
-![Admin Home - Google Chrome 20-08-2020 01_59_35 PM](https://user-images.githubusercontent.com/56467741/90974861-36794f00-e4fd-11ea-946a-c6c35f3de310.png)
+![Admin Home](<img width="915" height="489" alt="image" src="https://github.com/user-attachments/assets/7b3e7fc2-f82b-49f5-a1bd-7aeca256729d" />)
 
 ![Admin Home - Google Chrome 20-08-2020 02_00_03 PM](https://user-images.githubusercontent.com/56467741/90974864-3a0cd600-e4fd-11ea-92a6-b42f7cd2b338.png)
 
